@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
-const Navbar = ({userToken}) => {
+const Navbar = ({userToken, setUserToken}) => {
 //   
 
 const navigate = useNavigate();
