@@ -14,7 +14,12 @@ const PostsDisplay = ({postList}) => {
                     key={post.id}>
                     <h3>{post.title}</h3>
                     <p><b>Author: </b>{post.author.username}</p>
-                    <p>{post.tags}</p>
+                    <p>{post.content}</p>
+                    {post.tags.map(tag => {
+                        return (
+                        <div key={tag.id}><p>{tag.title}</p></div>)})}
+        
+
             </div>     
                 )
             })
