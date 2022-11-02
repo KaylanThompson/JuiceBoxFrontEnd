@@ -15,24 +15,23 @@ useEffect(() => {
 
 useEffect(() => {
     async function callGetPostList() {
-        const fetchedList = await getPostList(userToken)
+        const fetchedList = await getPostList()
         setPostList(fetchedList)
     }
     callGetPostList()
-}, [userToken])
+}, [])
 
     return (
         <BrowserRouter>
             <div id="main">
-                <Navbar userToken={userToken}/>
+                <Navbar userToken={userToken}
+                setUserToken={setUserToken}/>
                 <Routes>
                 <Route
                         exact path="/"
                         element={
                             <PostsDisplay
                                 postList={postList}
-                                userToken={userToken}
-                                setPostList={setPostList}
                             />
                         }
                     />
