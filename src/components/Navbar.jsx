@@ -64,10 +64,10 @@ const Navbar = ({ userToken, setUserToken }) => {
                         </label>
                         <input type="submit" value="Log In" />
                     </form>
-{/* 
+
                     <NavLink className="nav-link" to="/register">
                         <button>Sign Up</button>
-                    </NavLink> */}
+                    </NavLink>
                 </>
             )}
             <NavLink className="nav-link" to="/">
