@@ -12,7 +12,7 @@ const SinglePost = ({post}) => {
         <p>{post.content}</p>
         {post.tags.map(tag => {
             return (
-                <div key={tag.id}><p>{tag.name}</p></div>)})}
+                <span className="tag-line" key={tag.id}> {tag.name} </span>)})}
         </div> 
  
             </div>

@@ -3,23 +3,59 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
+  background-color: rgb(84, 20, 85);
+  background-image: url('apples.jpg');
+  background-position: center;
+  background-size:cover;
 }
 
 
+#post-display {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
+
+}
 
 #navbar {
   font-family: 'Poller One', Arial, sans-serif;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   max-height: 10%;
   min-height: 40px;
-  background-color: #222222;
+  background-color: rgb(109, 18, 62);
   color: white;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
+  width: 100%;
+
+
+
 }
 
-#navbar div {
-  padding: 5px;
+
+
+button {
+  background-color:  rgb(233, 174, 199);
 }
+
+input {
+  background-color: rgb(233, 174, 199);
+  margin: .5rem;
+
+}
+
+.single-post {
+  width: 15rem;
+  height: 20rem;
+  overflow:scroll;
+  background-color: rgb(230, 102, 124);
+  color: rgb(66, 3, 66);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10%;
+
+}
+
 

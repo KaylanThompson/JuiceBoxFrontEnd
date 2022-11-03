@@ -6,7 +6,7 @@ import SinglePost from "./SinglePost"
 const PostsDisplay = ({postList}) => {
 
     return (
-        <div>
+        <div id="post-display">
             {postList.map(post => {
                 return (
                     <SinglePost postList={postList} key={post.id} post={post}/>
