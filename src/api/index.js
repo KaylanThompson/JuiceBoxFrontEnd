@@ -23,12 +23,12 @@ export async function getPostList() {
 //             method: "POST",
 //             headers: {'Content-Type': 'application/json'},
 //             body: JSON.stringify({
-//                 user: {username: paramUsername, password: paramPassword}
+//                 username: paramUsername, password: paramPassword
 //             })
 //         }
 //         const response = await fetch(`${BASE}users/login`,userToLogin)
 //         const result = await response.json()
-//         return result.data.token
+//         return result.token
 //     } catch (error) {
 //         console.log('there is an error', error)
 //     }
